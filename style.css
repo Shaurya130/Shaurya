@@ -241,4 +241,7 @@ transition: .5s;
     .intro h2{
         transform: scale(0.5);
     }
+    .skills-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
