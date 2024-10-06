@@ -236,8 +236,7 @@ transition: .5s;
     }
     .intro h2{
         display: flex;
-        flex-direction: column
-        ;
+        flex-direction: column;
         transform: scale(0.7);
     }
     .skills-grid{
