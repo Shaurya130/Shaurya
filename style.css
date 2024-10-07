@@ -245,4 +245,16 @@ transition: .5s;
     h2{
         padding-left: 0%;
     }
+    .Instagram{
+        transform: scale(0.7);
+    }
+    .Leetcode{
+        transform: scale(0.7);
+    }
+    .Git{
+        transform: scale(0.7);
+    }
+    .HackerRank{
+        transform: scale(0.7);
+    }
 }
