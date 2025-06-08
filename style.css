@@ -9,10 +9,11 @@ body {
     background-color:  white;
     color:  #000f;
     line-height: 1.6;
+    background-size:auto;
 }
 
 .container {
-    width: 90%;
+    width: 120%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -21,6 +22,7 @@ body {
     color: #ededed;
 }
 .container h2{
+    font-size: 0.1rem;
     color: #fff;
 }
 #cont1{
@@ -257,4 +259,9 @@ transition: .5s;
     .HackerRank{
         transform: scale(0.7);
     }
+}
+@media(max-width:320px){
+    .container{
+        width: 100%;
+       
 }
