@@ -4,19 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-            <div class="poi" >
-                <h1> MY PORTFOLIO</h1>
-               </div>
-        </nav>
-        <header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>MY PORTFOLIO</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+        <header id="home">
         <div class="container">
             <div class="intro">
-                <h2>Hello Visitor<br>I am a
-                    <span>MERN stack developer</span></h2>
+                <h2>Hello Visitor<br>I am a<br>
+                    <span>FULL STACK developer</span></h2>
                 <p>My work allows me to create and develop softwares.</p>
                 <a href="https://www.linkedin.com/in/shaurya-awasthi-5a5575202" target="_blank" class="btn"><b>Contact Me</b></a>
                 <div class="info">
@@ -28,77 +56,328 @@
         </div>
     </header>
     
-    <section class="about">
+    <section class="about" id="about">
         <div class="container" id="cont1">
             <div class="about-img">
                 <img id="ph" src="Dp.jpg" alt="Profile">
             </div>
             <div class="about-info">
                 <h3>Who am I?</h3>
-                <h2>I'm Shaurya Awasthi, A Tech student and an aspiring developer</h2>
-                <p>Greetings to the reader, I am a learning developer whose current goal is to explore his domain so as to learn new technologies , I am also a backend developer at Machinee learning Centre of Excellence, a society at my college<br> <ul>
-                    <li><strong>Name:</strong> Shaurya Awasthi</li>
-                    <li><strong>From:</strong> Lucknow, Uttar pradesh, India</li>
-                    <li><strong>Age:</strong> 21</li>
-                    <li><strong>Email:</strong> shaurya.awasthi130@gmail.com</li>
-                    <li><strong>Education:</strong> City Montessori School, Lucknow (2022)</li>
-                    <li><strong>Degree:</strong> Bachelor in Technology(information Technology) <br> from Ajay Kumar Garg Engineering College, Ghaziabad(2023-27*)
-                </ul>
-                <a href="ShauryaAwasthi_InternshalaResume (1).pdf" target="_blank" class="btn" id="btun">Download CV</a>
+                <h2>I'm Shaurya Awasthi, A Tech Student and Aspiring Full Stack Developer</h2>
+                <p>Passionate about creating innovative solutions through code, I'm currently pursuing my Bachelor's in Information Technology while actively contributing as a backend developer at the Machine Learning Centre of Excellence at my college.</p>
+                
+                <div class="about-details">
+                    <div class="detail-grid">
+                        <div class="detail-item">
+                            <strong>🎓 Education:</strong>
+                            <span>B.Tech IT, AKGEC Ghaziabad (2023-27)</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>📍 Location:</strong>
+                            <span>Ghaziabad, Uttar Pradesh, India</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>💼 Role:</strong>
+                            <span>Backend Developer at MLCOE</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>🎯 Focus:</strong>
+                            <span>MERN Stack & Blockchain Technology</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-buttons">
+                    <a href="Updated_resume (2).pdf" target="_blank" class="btn primary-btn">
+                        <span>📄 Download CV</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shaurya-awasthi-5a5575202" target="_blank" class="btn secondary-btn">
+                        <span>💼 Let's Connect</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <h2>My Skills</h2>
             <div class="skills-grid">
-                <div class="skills-item">
-                    <h3>NodeJS</h3>
-                    <p>As a backend developer, using the NodeJs engine with all dependencies is a must, I have adequate knowledge of dependencies such as express, nodemon, session, bcrypt and many such dependencies</p>
-                </div>
-                <div class="skills-item">
-                    <h3>React</h3>
-                    <p>With a knowledge of useStates,useEffects and hooks, I have worked on many small projects to work on my react skills</p>
-                </div>
-                <div class="skills-item">
-                    <h3>C++</h3>
-                    <p>I have learned C++ from my college workshop and I try to practice it over leetcode</p>
+                    <div class="skills-item">
+                        <h3>NodeJS</h3>
+                        <p>I specialize in backend development using Node.js, leveraging frameworks like Express to build robust APIs. My experience includes working with essential libraries such as bcrypt for security, session management, and efficient development tools like nodemon.</p>
+                    </div>
+                    <div class="skills-item">
+                        <h3>React</h3>
+                        <p>I enjoy building interactive user interfaces with React. I’m comfortable with hooks like useState and useEffect, and I’ve completed several projects that helped me deepen my understanding of component-driven development.</p>
+                    </div>
+                    <div class="skills-item">
+                        <h3>C++</h3>
+                        <p>I learned C++ through college workshops and regularly practice problem-solving on platforms like LeetCode to strengthen my programming fundamentals.</p>
+                    </div>
+                    <div class="skills-item">
+                        <h3>NextJS</h3>
+                        <p>I’m actively expanding my skills in Next.js, focusing on server-side rendering and building scalable web applications through hands-on project work.</p>
+                    </div>
+                    <div class="skills-item">
+                        <h3>MongoDB</h3>
+                        <p>I have practical experience designing and managing databases with MongoDB, including working with aggregation pipelines and integrating ORMs for efficient data handling in backend systems.</p>
+                    </div>
+                    <div class="skills-item">
+                        <h3>Blockchain</h3>
+                        <p>I’m fascinated by blockchain technology and decentralized networks. After earning an NPTEL certification, I’ve been exploring blockchain concepts and working on related projects to further my expertise.</p>
+                    </div>
             </div>
-                <div class="skills-item">
-                    <h3>NextJS</h3>
-                    <p>Still working on my NextJS skills, I look to polish them using projects</p>
+        </div>
+    </section>
+    
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Software Circuit</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Shaurya130/Software-Circuit" target="_blank" class="project-link">
+                                <img src="Logos/github.webp" alt="GitHub" class="link-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <p>A full-featured Stack Overflow clone with question posting, answering, voting, and user authentication. Built with modern full-stack technologies including server-side rendering and state management.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Appwrite</span>
+                        <span class="tech-tag">Zustand</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                    </div>
                 </div>
-                <div class="skills-item">
-                    <h3>MongoDB</h3>
-                    <p>As a backend develper, the knowledge of database is a must, and i have an experience of working over MongoDB with knwledge of aggregation pipling and ORMs</p>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Video Platform Backend System</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Shaurya130/Video-Platform-Backend-System" target="_blank" class="project-link">
+                                <img src="Logos/github.webp" alt="GitHub" class="link-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <p>A comprehensive video streaming platform backend with user authentication, video upload/streaming, subscription management, and real-time features. Built with scalable architecture and modern technologies.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Cloudinary</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">Multer</span>
+                    </div>
                 </div>
-                <div class="skills-item">
-                    <h3>Blockchain</h3>
-                    <p>With knowledge of Blockchain and decentralized networks from my nptel certification,I am working over my blockchin skills</p>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Coming Soon</h3>
+                        <div class="project-links">
+                            <span class="coming-soon-badge">In Development</span>
+                        </div>
+                    </div>
+                    <p>Working on exciting new projects involving React, Next.js, and SQL technology. Stay tuned for updates!</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Blockchain</span>
+                        <span class="tech-tag">Web3</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="links">
-        <div class="container" id="hehe">
-            <h2>MY LINKS</h2>
-            <div class="container2">
+    
+    <section class="contact-form" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Let's Get In Touch</h2>
+                    <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology. Feel free to reach out!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>shaurya.awasthi130@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+91-9336961561</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Ghaziabad, Uttar Pradesh, India</p>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="Instagram">
-                    <a href="https://www.instagram.com/_dark_rhombus1305/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram"></a>
+                    <div class="social-links">
+                        <h4>Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/shaurya-awasthi-5a5575202" target="_blank" class="social-link linkedin">
+                                <span>💼</span>
+                            </a>
+                            <a href="https://github.com/Shaurya130" target="_blank" class="social-link github">
+                                <img src="Logos/github.webp" alt="GitHub" class="social-img">
+                            </a>
+                            <a href="https://leetcode.com/u/Shaurya130/" target="_blank" class="social-link leetcode">
+                                <img src="Logos/leet.png" alt="LeetCode" class="social-img">
+                            </a>
+                            <a href="https://www.instagram.com/_dark_rhombus1305/" target="_blank" class="social-link instagram">
+                                <span>📷</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="Leetcode">
-                    <a href="https://leetcode.com/u/Shaurya130/" target="_blank"> <img src="Logos/leet.png" alt="Leetcode"></a>
-                </div>
-                <div class="HackerRank">
-                    <a href="https://www.hackerrank.com/profile/shaurya2313099" target="_blank"> <img src="Logos/hr.png" alt="hacker rank"></a>
-                </div>
-                <div class="Git">
-                    <a href="https://github.com/Shaurya130" target="_blank"> <img src="Logos/github.webp" alt="Git Hub"></a>
+
+                <div class="contact-form-container">
+                    <form class="contact-form-element" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="collaboration">Collaboration Opportunity</option>
+                                <option value="job">Job Opportunity</option>
+                                <option value="project">Project Discussion</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project or opportunity..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon">🚀</span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        ↑
+    </button>
+    
+    <script>
+        // Mobile Navigation
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Active navigation link on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section, header');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Scroll to top functionality
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+        
+        // Contact Form Handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.querySelector('.submit-btn');
+            const btnText = document.querySelector('.btn-text');
+            const btnIcon = document.querySelector('.btn-icon');
+            
+            // Change button state
+            btnText.textContent = 'Sending...';
+            btnIcon.textContent = '⏳';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission (replace with actual form handling)
+            setTimeout(() => {
+                btnText.textContent = 'Message Sent!';
+                btnIcon.textContent = '✅';
+                
+                // Reset form
+                document.getElementById('contactForm').reset();
+                
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    btnText.textContent = 'Send Message';
+                    btnIcon.textContent = '🚀';
+                    submitBtn.disabled = false;
+                }, 3000);
+            }, 2000);
+        });
+    </script>
 </body>
 </html>
